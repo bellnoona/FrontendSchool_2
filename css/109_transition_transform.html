@@ -4,14 +4,17 @@
     <title>Transition Test</title>
     <style>
       .box {
+        margin: 100px;
         width: 100px;
         height: 100px;
         background: dodgerblue;
         transition: all 1s;
+        /* transform-origin:left top; */
+        transform-origin: left;
       }
 
       .box:hover {
-        transform: skew(40deg);
+        transform: rotate(90deg);
       }
     </style>
   </head>
