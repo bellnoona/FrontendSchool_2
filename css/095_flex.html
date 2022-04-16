@@ -6,25 +6,18 @@
       .container {
         display: flex;
         height: 100vh;
-        /* flex-wrap: wrap; */
       }
 
       li {
-        /* 줄어들지 않는다. */
-        flex-shrink: 0;
-        /* 줄어든다 */
-        flex-shrink: 1;
-        width: 100px;
+        flex: 1;
         box-sizing: border-box;
         height: 50px;
         background-color: pink;
         border: 1px solid black;
       }
+
       li:nth-child(1) {
-        flex-shrink: 1;
-      }
-      li:nth-child(2) {
-        flex-shrink: 2;
+        align-self: center;
       }
     </style>
   </head>
